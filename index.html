@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO: make the world a better place (Q3 milestone, deprioritized) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Comas Nutrition Labs ,,, | Character Selector Edition v6.0</title>
+    
+    <!-- FIXME: work-life balance (low priority, closed as wontfix) -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Tres Comas Nutrition Labs v6.0 — Character Selector Edition. Select your founder, get their signature recipes. $1.2B valuation. 10 characters. 20 recipes.">
+    <meta name="keywords" content="smoothie recipes, protein smoothies, nutrition protocol, healthy recipes, meal prep, fitness nutrition, developer health, high protein, pre workout, post workout, tres comas, silicon valley">
+    <meta name="author" content="Tres Comas Nutrition Labs">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Tres Comas Nutrition Labs ,,, | v6.0 Character Selector Edition">
+    <meta property="og:description" content="Select your founder. Get their signature recipes. Nutrition for the three-comma body.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://d3nny-sf.github.io/health-code/">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tres Comas Nutrition Labs ,,, | v6.0">
+    <meta name="twitter:description" content="Character Selector Edition. 10 founders. 20 recipes. $1.2B valuation.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vyigwk4ukg");
+    </script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     HEADER - EDITORIAL LUXURY DARK MODE
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<header class="tc-header">
+    <!-- Full-bleed atmospheric background -->
+    <div class="tc-header-bg">
+        <img src="assets/brand/team-lineup.png" alt="" class="tc-header-bg-img">
+        <div class="tc-header-bg-overlay"></div>
+    </div>
+
+    <!-- Top micro-bar -->
+    <div class="tc-topbar">
+        <span class="tc-topbar-commas">,,,</span>
+        <span class="tc-topbar-status">
+            $1,200,000,000 ◆ UNICORN ◆ SERIES B ◆ FOUNDED: 2:47 AM
+        </span>
+        <span class="tc-topbar-russ">
+            // Russ: "SCHWAAAAG."
+        </span>
+    </div>
+
+    <!-- Main header identity block -->
+    <div class="tc-header-identity">
+        <!-- Inline SVG wordmark -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" width="700" height="175">
+            <defs>
+                <linearGradient id="commaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1"/>
+                    <stop offset="100%" style="stop-color:#C9A84C;stop-opacity:1"/>
+                </linearGradient>
+            </defs>
+            <text x="28" y="68" font-family="Georgia,serif" font-size="64" font-weight="bold" fill="url(#commaGold)" letter-spacing="4">,,,</text>
+            <line x1="148" y1="18" x2="148" y2="122" stroke="#C9A84C" stroke-width="1.5" opacity="0.4"/>
+            <text x="168" y="62" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="800" fill="#FFFFFF" letter-spacing="5">TRES COMAS</text>
+            <text x="170" y="92" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="400" fill="#C9A84C" letter-spacing="8">NUTRITION LABS</text>
+            <text x="170" y="118" font-family="Georgia,serif" font-size="11" font-style="italic" fill="#6b7280" letter-spacing="1">Nutrition for the Three-Comma Body.</text>
+        </svg>
+        
+        <!-- Tagline rotator -->
+        <div class="tc-tagline-rotator" id="headerTagline">
+            Making nutrition better through better nutrition.
+        </div>
+    </div>
+
+    <!-- Bottom of header -->
+    <div class="tc-header-footer">
+        <code class="tc-subcode">// health-code v6.0 · character selector edition · zero dependencies</code>
+        <span class="tc-badge-unicorn">🦄 UNICORN</span>
+    </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     COMMA TICKER
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<div class="tc-ticker-wrap">
+    <div class="tc-ticker" id="commaTicker"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     CHARACTER SELECTOR STRIP (PRIMARY NAVIGATION)
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<section class="tc-selector-section">
+    <!-- Label -->
+    <div class="tc-selector-label">
+        <span class="tc-sel-label-text">// SELECT YOUR FOUNDER</span>
+        <span class="tc-sel-hint">click a character to filter their signature recipes</span>
+    </div>
+
+    <!-- Scrollable strip -->
+    <div class="tc-selector-strip" id="characterStrip">
+        <!-- ALL button (default active state) -->
+        <button class="tc-sel-card tc-sel-all active" data-character="all" style="--char-accent: #C9A84C;">
+            <div class="tc-sel-all-icon">,,,</div>
+            <div class="tc-sel-card-name">ALL</div>
+            <div class="tc-sel-card-recipes">20 recipes</div>
+        </button>
+        <!-- Character cards built by JS -->
+    </div>
+
+    <!-- Bio quote bar -->
+    <div class="tc-bio-bar" id="bioBar">
+        <img class="tc-bio-avatar" id="bioAvatar" src="" alt="">
+        <div class="tc-bio-content">
+            <span class="tc-bio-name" id="bioName"></span>
+            <span class="tc-bio-title" id="bioTitle"></span>
+            <span class="tc-bio-quote" id="bioQuote"></span>
+        </div>
+        <span class="tc-bio-equity" id="bioEquity"></span>
+    </div>
+    
+    <!-- Category Filter Bar -->
+    <div class="tc-category-bar" id="categoryBar">
+        <span class="tc-catbar-label">// FILTER BY TYPE</span>
+        <div class="tc-catbar-filters">
+            <button class="tc-catbar-btn active" data-filter="all">
+                <span class="tc-catbar-icon">🍽️</span>
+                <span class="tc-catbar-text">All</span>
+            </button>
+            <button class="tc-catbar-btn" data-filter="signature">
+                <span class="tc-catbar-icon">⭐</span>
+                <span class="tc-catbar-text">Signature</span>
+            </button>
+            <button class="tc-catbar-btn" data-filter="smoothie">
+                <span class="tc-catbar-icon">🥤</span>
+                <span class="tc-catbar-text">Smoothies</span>
+            </button>
+            <button class="tc-catbar-btn" data-filter="soup">
+                <span class="tc-catbar-icon">🍲</span>
+                <span class="tc-catbar-text">Soups</span>
+            </button>
+            <button class="tc-catbar-btn" data-filter="sauce">
+                <span class="tc-catbar-icon">🌶️</span>
+                <span class="tc-catbar-text">Sauces</span>
+            </button>
+            <button class="tc-catbar-btn" data-filter="frozen">
+                <span class="tc-catbar-icon">🧊</span>
+                <span class="tc-catbar-text">Frozen</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECONDARY NAVIGATION (Team / Press Room)
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<div class="tc-secondary-nav">
+    <button class="tc-secondary-nav-btn active" data-section="recipes">🥤 Recipes</button>
+    <button class="tc-secondary-nav-btn" data-section="about">🏢 About</button>
+    <button class="tc-secondary-nav-btn" data-section="team">👥 Team</button>
+    <button class="tc-secondary-nav-btn" data-section="press">📰 Press Room</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     RECIPE AREA
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<section class="tc-recipe-area" id="recipeArea">
+    <!-- Dynamic header -->
+    <div class="tc-recipe-area-header" id="recipeAreaHeader">
+        <span class="tc-rh-all">// showing all 20 recipes across 4 categories</span>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="tc-category-tabs" id="categoryTabs">
+        <button class="tc-cat-tab active" data-category="all">All</button>
+        <button class="tc-cat-tab" data-category="smoothie">🥤 Smoothies</button>
+        <button class="tc-cat-tab" data-category="soup">🍲 Soups</button>
+        <button class="tc-cat-tab" data-category="sauce">🌶️ Sauces & Dips</button>
+        <button class="tc-cat-tab" data-category="frozen">🧊 Frozen Treats</button>
+    </div>
+
+    <!-- Recipe cards container - populated by JS -->
+    <div class="tc-recipe-grid" id="recipeGrid"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ABOUT SECTION
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<section class="tc-about-section" id="aboutSection">
+    <!-- Hero with Logo -->
+    <div class="tc-about-hero">
+        <img src="assets/brand/logo-hero.png" alt="Tres Comas Nutrition Labs" class="tc-about-hero-logo">
+        <div class="tc-about-hero-text">
+            <span class="tc-about-tagline">Nutrition for the Three-Comma Body.</span>
+            <span class="tc-about-est">Est. 2:47 AM, a Tuesday</span>
+        </div>
+    </div>
+    
+    <!-- Comma Tracker -->
+    <div class="tc-comma-tracker">
+        <div class="tc-comma-tracker-header">
+            <h2>,,,  COMMA DEFICIT TRACKER</h2>
+            <p>// "One comma is an insult. We need TRES." — R. Hanneman</p>
+        </div>
+        <div class="tc-comma-tracker-visual">
+            <img src="assets/brand/comma-tracker.png" alt="Comma Progress" class="tc-comma-tracker-img">
+        </div>
+        <div class="tc-comma-meter">
+            <div class="tc-comma-meter-bar">
+                <div class="tc-comma-meter-fill" style="width: 33.3%"></div>
+                <div class="tc-comma-milestone" style="left: 33.3%">
+                    <span class="tc-milestone-dot achieved"></span>
+                    <span class="tc-milestone-label">$1B</span>
+                </div>
+                <div class="tc-comma-milestone" style="left: 66.6%">
+                    <span class="tc-milestone-dot"></span>
+                    <span class="tc-milestone-label">$2B</span>
+                </div>
+                <div class="tc-comma-milestone" style="left: 100%">
+                    <span class="tc-milestone-dot"></span>
+                    <span class="tc-milestone-label">$3B</span>
+                </div>
+            </div>
+            <div class="tc-comma-meter-labels">
+                <span class="tc-meter-current">Current: $1.2B</span>
+                <span class="tc-meter-target">Target: $1,000,000,000,000 (tres comas)</span>
+            </div>
+        </div>
+        <div class="tc-comma-status">
+            <div class="tc-comma-stat">
+                <span class="tc-comma-stat-value tc-gold">,</span>
+                <span class="tc-comma-stat-label">ACHIEVED</span>
+            </div>
+            <div class="tc-comma-stat">
+                <span class="tc-comma-stat-value tc-dim">,</span>
+                <span class="tc-comma-stat-label">PENDING</span>
+            </div>
+            <div class="tc-comma-stat">
+                <span class="tc-comma-stat-value tc-dim">,</span>
+                <span class="tc-comma-stat-label">PENDING</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Company Story -->
+    <div class="tc-about-story">
+        <div class="tc-story-header">
+            <img src="assets/brand/logo-stamp.png" alt="" class="tc-story-stamp">
+            <h2>// THE FOUNDING STORY</h2>
+        </div>
+        
+        <div class="tc-story-timeline">
+            <div class="tc-story-event">
+                <div class="tc-event-marker"></div>
+                <div class="tc-event-time">2:47 AM</div>
+                <div class="tc-event-content">
+                    <h3>The Discovery</h3>
+                    <p>While monitoring Pied Piper's decentralized internet traffic, Richard Hendricks discovered that 47% of all data flowing through the new internet was... smoothie recipes.</p>
+                    <span class="tc-event-quote">"I found this troubling. Erlich found this fundable."</span>
+                </div>
+            </div>
+            
+            <div class="tc-story-event">
+                <div class="tc-event-marker"></div>
+                <div class="tc-event-time">3:12 AM</div>
+                <div class="tc-event-content">
+                    <h3>The Name</h3>
+                    <p>Russ Hanneman arrived (uninvited), saw the blender, heard Erlich say "disruption," and immediately declared: "TRES COMAS." He then wrote a $2M check from his McLaren's glove compartment.</p>
+                    <span class="tc-event-quote">"That's how you do business. SCHWAAAAG."</span>
+                </div>
+            </div>
+            
+            <div class="tc-story-event">
+                <div class="tc-event-marker"></div>
+                <div class="tc-event-time">Q3, Year One</div>
+                <div class="tc-event-content">
+                    <h3>The Pivot</h3>
+                    <p>After Gavin Belson's $400M acquisition offer was declined, he led a $40M Series A instead. "If I cannot acquire it, I will influence it from within until it is essentially Hooli Nutrition anyway."</p>
+                    <span class="tc-event-quote">"Consider the tortoise."</span>
+                </div>
+            </div>
+            
+            <div class="tc-story-event">
+                <div class="tc-event-marker achieved"></div>
+                <div class="tc-event-time">TODAY</div>
+                <div class="tc-event-content">
+                    <h3>Unicorn Status</h3>
+                    <p>$1.2B valuation. One comma achieved. Two to go. Big Head accidentally led the Series B by clicking "yes" on what he thought was a smoothie subscription form.</p>
+                    <span class="tc-event-quote">"I don't really know how I got here, but the smoothie is good."</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Founding Four Cards -->
+    <div class="tc-founding-four">
+        <div class="tc-founding-header">
+            <h2>,,,  THE FOUNDING FOUR</h2>
+            <p>// The original Pied Piper crew who started it all</p>
+        </div>
+        <div class="tc-founding-grid">
+            <div class="tc-founding-card">
+                <img src="assets/cards/card-richard.png" alt="Richard Hendricks" class="tc-founding-card-img">
+                <div class="tc-founding-card-label">CEO / Chief Anxiety Officer</div>
+            </div>
+            <div class="tc-founding-card">
+                <img src="assets/cards/card-erlich.png" alt="Erlich Bachman" class="tc-founding-card-img">
+                <div class="tc-founding-card-label">Chief Vision Officer</div>
+            </div>
+            <div class="tc-founding-card">
+                <img src="assets/cards/card-gilfoyle.png" alt="Bertram Gilfoyle" class="tc-founding-card-img">
+                <div class="tc-founding-card-label">CTO / Nutrition Security</div>
+            </div>
+            <div class="tc-founding-card">
+                <img src="assets/cards/card-russ.png" alt="Russ Hanneman" class="tc-founding-card-img">
+                <div class="tc-founding-card-label">Chairman of Vibes</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mission Statement with Badge -->
+    <div class="tc-about-mission">
+        <img src="assets/brand/logo-badge.png" alt="Tres Comas Badge" class="tc-mission-badge">
+        <div class="tc-mission-content">
+            <h3>OUR MISSION</h3>
+            <p class="tc-mission-text">"To make the world a better place through middle-out macro compression, one smoothie at a time."</p>
+            <div class="tc-mission-stats">
+                <div class="tc-mission-stat">
+                    <span class="tc-mstat-value">20</span>
+                    <span class="tc-mstat-label">Recipes</span>
+                </div>
+                <div class="tc-mission-stat">
+                    <span class="tc-mstat-value">10</span>
+                    <span class="tc-mstat-label">Founders</span>
+                </div>
+                <div class="tc-mission-stat">
+                    <span class="tc-mstat-value">$1.2B</span>
+                    <span class="tc-mstat-label">Valuation</span>
+                </div>
+                <div class="tc-mission-stat">
+                    <span class="tc-mstat-value">1</span>
+                    <span class="tc-mstat-label">Blender</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     TEAM SECTION
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<section class="tc-team-section" id="teamSection">
+    <!-- Hero Banner with Team Lineup -->
+    <div class="tc-team-hero">
+        <img src="assets/brand/team-lineup.png" alt="The Founding Team of Tres Comas Nutrition Labs" class="tc-team-hero-img">
+        <div class="tc-team-hero-overlay">
+            <div class="tc-team-hero-content">
+                <span class="tc-team-hero-commas">,,,</span>
+                <h1 class="tc-team-hero-title">THE FOUNDING TEAM</h1>
+                <p class="tc-team-hero-subtitle">10 Founders · $1.2B Valuation · 1 Blender</p>
+                <p class="tc-team-hero-quote">"We're making nutrition better through optimized human capital."</p>
+                <span class="tc-team-hero-attribution">— G. Belson, Board Member (self-appointed)</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Meet the Team Section -->
+    <div class="tc-team-intro">
+        <h2 class="tc-team-intro-title">// MEET THE FOUNDERS</h2>
+        <p class="tc-team-intro-desc">Click any founder to view their signature recipes</p>
+    </div>
+    
+    <div class="tc-team-grid" id="teamGrid"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     PRESS ROOM SECTION
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<section class="tc-press-section" id="pressSection">
+    <div class="tc-press-header">
+        <h2>,,,  PRESS ROOM</h2>
+        <p>// "All statements approved by Gavin. Overruled by Monica. Published anyway."</p>
+    </div>
+    <div id="pressReleases"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<footer class="tc-footer">
+    <div class="tc-footer-brand">,,,</div>
+    <div class="tc-footer-tagline">Tres Comas Nutrition Labs · Character Selector Edition v6.0</div>
+    <div class="tc-footer-links">
+        <a href="https://github.com/d3nny-sf/health-code" target="_blank">// GitHub</a>
+        <a href="#" onclick="showSection('team'); return false;">// Team</a>
+        <a href="#" onclick="showSection('press'); return false;">// Press Room</a>
+    </div>
+    <div class="tc-footer-legal">
+        <p>// Built with 💪 Vanilla JS and $122M in VC funding</p>
+        <p>// "I own 10% of this footer." — E. Bachman</p>
+        <p>// "The site now looks like it was designed by someone whose car doors open like THIS 🦅,,, not like this →" — R. Hanneman</p>
+        <p>// ⌂ Hacker Hostel · Palo Alto, CA · Est. 2:47am, a Tuesday</p>
+        <p>// $1.2B valuation · 1 of 3 commas achieved · Russ: "disgusting"</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
