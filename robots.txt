@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://d3nny-sf.github.io/health-code/sitemap.xml
